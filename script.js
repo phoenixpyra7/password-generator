@@ -3,12 +3,27 @@ var generateBtn = document.querySelector("#generate");
 /*added a function for a return of a confirmation the button was clicked*/
 function generatePassword() {
   console.log("The generate passwerd button has been clicked")
-/*thinking that an if-else will help select character range, status was crossed out so I selected permission status instead*/
-if ((charaters >= 1) && (characters <= 28)) {
-  PermissionStatus = "Acceptable.";
-} else {
-  PermissionStatus = "Not accepptable.";
+
+/* from general chat as example
+var chars = "abcde";
+var result = "";
+
+for (var i = 0; i < 3; i++) {
+  var random = Math.floor(Math.random() * chars.length);
+  result += chars[random];
 }
+*/
+/* trying algoritm found on w3 lists*/
+console.log(result); // Theoretical output - "cae";
+Math.floor(Math.random() * 128) + 8;
+
+
+
+
+
+
+
+
 
   /*return that variable*/
   return "Generated password will go here";
