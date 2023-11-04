@@ -9,10 +9,6 @@ if ((charaters >= 1) && (characters <= 28)) {
 } else {
   PermissionStatus = "Not accepptable.";
 }
-}
-// 
-
-
 
   /*return that variable*/
   return "Generated password will go here";
