@@ -10,7 +10,7 @@ var generateBtn = document.querySelector("#generate");
  var guarantiedChar = "" //global
 
 
-/*added a function for a return to
+/*added a function for a return to confirm that the button was clicked*/
 function generatePassword() {
   //console.log("The generate password button has been clicked")
   var userLength = parseInt(prompt("What is the total length of your password"));
