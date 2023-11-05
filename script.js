@@ -14,16 +14,17 @@ function generatePassword() {
 /*added a function for a return to confirm that the button was clicked*/
 //console.log("The generate password button has been clicked")
 //added that a length must be selected or it will not continue to next prompt.
-  var userLength = parseInt(prompt("What is the total length of your password"));
+  var userLength = parseInt(prompt("How many characters between 8 and 128 would you like for your password to be?"));
+  //added an alert if anything but a number is typed in.
   if(isNaN(userLength)) {
     console.log(userLength)
-    alert("Must choose a number!");
+    alert("You must choose a number!");
     return null;
   }
-//added a character length range.
+//added a character length range of 8-128, added an alert if number selected is out of range.
   if(userLength < 8 || userLength > 128) {
     console.log(userLength)
-    alert("Must be btw 8 through 128");
+    alert("You must select a number between 8 and 128");
     return null;
   }
 
