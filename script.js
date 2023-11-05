@@ -33,7 +33,7 @@ function generatePassword() {
   var choseNum = confirm("Do you want numbers in your password?")
   var choseChar = confirm("Do you want special characters in your password?")
 
-  //To get the user choices fort characters you will need to use the confirm method
+  //Note: To get the user choices for the characters, you will need to use the confirm method
   if(choseUpper) {
     possChars += upperCase;
     guarantiedChar += upperCase[Math.floor(Math.random() * possChars.length)]
@@ -41,14 +41,17 @@ function generatePassword() {
 
   if(choseLower) {
     possChars += lowerCase;
+    guarantiedChar += lowerCase[Math.floor(Math.random() * possChars.length)];
   }
 
   if(choseNum) {
     possChars += number;
+    guarantiedChar += number[Math.floor(Math.random() * possChars.length)]; //should i use length on this and spc char?
   }
 
   if(choseChar) {
     possChars += spcChar;
+    guarantiedChar += spcChar[Math.floor(Math.random() * possChars.length)];
   }
 console.log("RESULT: ", result)
 //var chars = "abcde";
