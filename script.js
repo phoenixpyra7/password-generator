@@ -10,13 +10,14 @@ var generateBtn = document.querySelector("#generate");
  var guarantiedChar = "" //global
 
 
-/*added a function for a return to confirm that the button was clicked*/
 function generatePassword() {
-  //console.log("The generate password button has been clicked")
+/*added a function for a return to confirm that the button was clicked*/
+//console.log("The generate password button has been clicked")
+//added that a length must be selected or it will not continue to next prompt.
   var userLength = parseInt(prompt("What is the total length of your password"));
   if(isNaN(userLength)) {
     console.log(userLength)
-    alert("Must hoose a number!");
+    alert("Must choose a number!");
     return null;
   }
 
