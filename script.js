@@ -20,7 +20,7 @@ function generatePassword() {
     alert("Must choose a number!");
     return null;
   }
-
+//added a character length range.
   if(userLength < 8 || userLength > 128) {
     console.log(userLength)
     alert("Must be btw 8 through 128");
