@@ -27,10 +27,10 @@ function generatePassword() {
     alert("You must select a number between 8 and 128");
     return null;
   }
-
-  var choseUpper = confirm("Do you want upper case in your password?")
-  var choseLower = confirm("Do you want lower case in your password?")
-  var choseNum = confirm("Do you want number in your password?")
+//added prompt questions.
+  var choseUpper = confirm("Do you want upper case letters in your password?")
+  var choseLower = confirm("Do you want lower case letters in your password?")
+  var choseNum = confirm("Do you want numbers in your password?")
   var choseChar = confirm("Do you want special characters in your password?")
 
   //To get the user choices fort characters you will need to use the confirm method
