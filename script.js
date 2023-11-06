@@ -60,18 +60,20 @@ function generatePassword() {
     possChars += spcChar;
     guarantiedChar += spcChar[Math.floor(Math.random() * possChars.length)];
   }
-console.log("RESULT: ", result) // i cant remember what this is for
-//var chars = "abcde";
+
 
 // do i type 0-7 or just leave it as 0?
 for (var i = 0-7; i < userLength; i++) {
   var random = Math.floor(Math.random() * possChars.length);
   result += possChars[random];
+
+console.log("RESULT: ", result) // i cant remember what this is for
+//var chars = "abcde";
 }
 //loop through gaurantiedChar done
 // console.log(result); // Theoretical output - "cae";   - I can't recall what we were discussing this in regard to
   /*return that variable*/
-  return result;
+return result;
 } // this white curly brace doesnt do anything but if deleted, page wont work????
 // Write password to the #password input - cannot recall where this comes in when choosing algorithms/layout.
 function writePassword() {
