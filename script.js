@@ -34,13 +34,13 @@ function generatePassword() {
     alert("You must choose a number!");
     return null;
   }*/  
-//added prompt questions.
+//added prompt questions/ the confirm method used.
   var choseUpper = confirm("Do you want upper case letters in your password?")
   var choseLower = confirm("Do you want lower case letters in your password?")
   var choseNum = confirm("Do you want numbers in your password?")
   var choseChar = confirm("Do you want special characters in your password?")
 
-  //Note: To get the user choices for the characters, you will need to use the confirm method
+ 
   if(choseUpper) {
     possChars += upperCase;
     guarantiedChar += upperCase[Math.floor(Math.random() * possChars.length)]
@@ -53,7 +53,7 @@ function generatePassword() {
 
   if(choseNum) {
     possChars += number;
-    guarantiedChar += number[Math.floor(Math.random() * possChars.length)]; //should i use length on this and on the spc char?
+    guarantiedChar += number[Math.floor(Math.random() * possChars.length)]; //should i use length on this and on the spc char or type a different option?
   }
 
   if(choseChar) {
@@ -63,21 +63,16 @@ function generatePassword() {
 console.log("RESULT: ", result) // i cant remember what this is for
 //var chars = "abcde";
 
-for (var i = 0; i < userLength; i++) {
+// do i type 0-7 or just leave it as 0?
+for (var i = 0-7; i < userLength; i++) {
   var random = Math.floor(Math.random() * possChars.length);
   result += possChars[random];
 }
-
-//loop through gaurantiedChar
-
-// console.log(result); // Theoretical output - "cae";
-
-
-
+//loop through gaurantiedChar done
+// console.log(result); // Theoretical output - "cae";   - I can't recall what we were discussing this in regard to
   /*return that variable*/
   return result;
-}
-
+} // this white curly brace doesnt do anything but if deleted, page wont work????
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
