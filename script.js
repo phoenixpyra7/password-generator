@@ -16,6 +16,7 @@ function generatePassword() {
 //added that a length must be selected or it will not continue to next prompt.
   var userLength = parseInt(prompt("How many characters between 8 and 128 would you like for your password to be?"));
   //added an alert if anything but a number is typed in.
+  
   if(isNaN(userLength)) {
     console.log(userLength)
     alert("You must choose a number!");
@@ -27,6 +28,12 @@ function generatePassword() {
     alert("You must select a number between 8 and 128");
     return null;
   }
+  //Do I add 2 more of these? i cant get it to work for numb/spcchar
+  /*if(spcChar(userLength)) {
+    console.log(userLength)
+    alert("You must choose a number!");
+    return null;
+  }*/  
 //added prompt questions.
   var choseUpper = confirm("Do you want upper case letters in your password?")
   var choseLower = confirm("Do you want lower case letters in your password?")
@@ -62,9 +69,9 @@ for (var i = 0; i < userLength; i++) {
 }
 
 //loop through gaurantiedChar
-/* trying algoritm found on w3 lists*/
+
 // console.log(result); // Theoretical output - "cae";
-// Math.floor(Math.random() * 128) + 8;
+
 
 
   /*return that variable*/
