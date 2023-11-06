@@ -53,7 +53,7 @@ function generatePassword() {
 
   if(choseNum) {
     possChars += number;
-    guarantiedChar += number[Math.floor(Math.random() * possChars.length)]; //should i use length on this and on the spc char or type a different option?
+    guarantiedChar += number[Math.floor(Math.random() * possChars.length)]; 
   }
 
   if(choseChar) {
