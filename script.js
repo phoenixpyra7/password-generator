@@ -63,7 +63,7 @@ function generatePassword() {
 
 
 // do i type 0-7 or just leave it as 0?
-for (var i = 0-7; i < userLength; i++) {
+for (var i = 0; i < userLength; i++) {
   var random = Math.floor(Math.random() * possChars.length);
   result += possChars[random];
 
