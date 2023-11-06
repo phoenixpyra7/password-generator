@@ -46,14 +46,14 @@ function generatePassword() {
 
   if(choseNum) {
     possChars += number;
-    guarantiedChar += number[Math.floor(Math.random() * possChars.length)]; //should i use length on this and spc char?
+    guarantiedChar += number[Math.floor(Math.random() * possChars.length)]; //should i use length on this and on the spc char?
   }
 
   if(choseChar) {
     possChars += spcChar;
     guarantiedChar += spcChar[Math.floor(Math.random() * possChars.length)];
   }
-console.log("RESULT: ", result)
+console.log("RESULT: ", result) // i cant remember what this is for
 //var chars = "abcde";
 
 for (var i = 0; i < userLength; i++) {
