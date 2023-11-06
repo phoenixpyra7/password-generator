@@ -73,7 +73,7 @@ for (var i = 0-7; i < userLength; i++) {
   /*return that variable*/
   return result;
 } // this white curly brace doesnt do anything but if deleted, page wont work????
-// Write password to the #password input
+// Write password to the #password input - cannot recall where this comes in when choosing algorithms/layout.
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -82,5 +82,5 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
+// Added an event listener to the generate button
 generateBtn.addEventListener("click", writePassword);
