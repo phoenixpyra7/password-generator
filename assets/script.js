@@ -7,9 +7,9 @@ function generatePassword() {
   var lowerCase = upperCase.toLocaleLowerCase(); //this will change the capitals to lower case.
   var number = "123456789" //these are the numbers available to use.
   var spcChar = "!@#$%&?~" //selected basic special chars to keep it simple.
-  var result = ""; 
-  var possChars = ""; 
-  var guarantiedChar = ""; 
+  var result = "";
+  var possChars = "";
+  var guarantiedChar = "";
   /*added a function for a return, to confirm that the button was clicked*/
   //console.log("The generate password button has been clicked")- removed this.
   //added that a length must be selected or it will not continue to next prompt.
