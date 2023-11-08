@@ -6,12 +6,12 @@ This is a basic password generator which requires the user to select how many ch
 
 ## Screenshot
 
-![ Password generator](./assets/images/Password-Generator.png)
+![Password generator](./assets/images/Password-Generator.png)
 
 
 ## Link 
 
-[Live URL](https://phoenixpyra7.github.io/password-generator/)
+Live URL: https://phoenixpyra7.github.io/password-generator/
 
 
 
