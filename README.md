@@ -11,7 +11,7 @@ This is a basic password generator which requires the user to select how many ch
 
 ## Link 
 
-![Live URL](https://phoenixpyra7.github.io/password-generator/)
+[Live URL](https://phoenixpyra7.github.io/password-generator/)
 
 
 
