@@ -6,7 +6,7 @@ This is a basic password generator which requires the user to select how many ch
 
 ## Screenshot
 
-![ Password generator](https://tinyurl.com/ynurswg5)
+![ Password generator](./assets/images/Password-Generator.png)
 
 
 ## Link 
